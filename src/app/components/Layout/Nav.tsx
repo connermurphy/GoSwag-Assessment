@@ -112,7 +112,7 @@ const NavLinks = (): JSX.Element => {
             <div className='mt-auto'>
                 <ul className='flex flex-col gap-y-1'>
                     <li>
-                        <StyledNavLink href='#' className='active'>
+                        <StyledNavLink href='#'>
                             <BuoyIcon />
                             Support
                         </StyledNavLink>
