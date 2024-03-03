@@ -14,6 +14,34 @@ const config: Config = {
         'sm': '1rem', //16px
         'md': '1.125rem', //18px
         'lg': '1.25rem', //20px
+      },
+      //group colours together
+      //lifted from Figma, 
+      colors: {
+
+        //base white
+        'white': '#fff',
+
+        //grey (consist of grey & charcoal like colours)
+        'grey-900': '#101828',
+
+        'grey-700': '#344054',
+        'grey-600': '#475467',
+        'grey-500': '#667085',
+
+        'grey-300': '#D0D5DD',
+        'grey-200': '#EAECF0',
+        'grey-50': '#F9FAFB',
+
+        //blue (brand blue)
+        'blue-900': '#155EEF',
+        'blue-50': '#C0CFED',
+
+        //success (green)
+        'success-500': '#17B26A',
+
+        //primary colour (?)
+        'primary-700': '#1F2133'
       }
     },
   },
