@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 html {
-    --white: '#fff';
+    --white: #fff;
 
     /* grey (consist of grey & charcoal like colours) */
     --grey-900: #101828;
