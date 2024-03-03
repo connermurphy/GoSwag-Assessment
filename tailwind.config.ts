@@ -42,6 +42,10 @@ const config: Config = {
 
         //primary colour (?)
         'primary-700': '#1F2133'
+      },
+      'backgroundImage': {
+        //primary gradient bg
+        'primary-gradient': 'linear-gradient(107deg, #155EEF 1.86%, #229CD1 48.8%, #22BC97 98.76%)'
       }
     },
   },
