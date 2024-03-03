@@ -24,20 +24,20 @@ const StyledButton = styled.button<{ $buttonStyle?: ButtonStyle }>`
 `;
 
 
-const GSButton: React.FC<IButtonProps> = ({ children, ...rest }): JSX.Element => {
+const GSButton: React.FC<IButtonProps> = ({ children, buttonStyle, ...rest }): JSX.Element => {
     //return normal button
     return (
-        <StyledButton {...rest}>
+        <StyledButton {...rest} $buttonStyle={buttonStyle}>
             {children}
         </StyledButton>
     )
 
 }
 
-const GSLink: React.FC<ILinkProps> = ({ children, ...rest }): JSX.Element => {
+const GSLink: React.FC<ILinkProps> = ({ children, buttonStyle, ...rest }): JSX.Element => {
 
     return (
-        <StyledButton {...rest} as={Link}>
+        <StyledButton {...rest} as={Link} $buttonStyle={buttonStyle}>
             {children}
         </StyledButton>
     )
