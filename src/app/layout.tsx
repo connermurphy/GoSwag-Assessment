@@ -1,3 +1,4 @@
+import StylesheetRegistry from "@/lib/StylesheetRegistry";
 import "./style.css";
 
 import type { Metadata } from "next";
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <StylesheetRegistry>
+          {children}
+        </StylesheetRegistry>
       </body>
     </html>
   );
