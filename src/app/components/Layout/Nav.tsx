@@ -8,14 +8,16 @@ import LogoIcon from '/public/logo_icon.svg';
 import LogoName from '/public/logo_name.svg';
 import Link from 'next/link';
 
-import { GSLink as Button, GSButton as Test} from '../UI/Button';
+import { GSLink as Button } from '../UI/Button';
 import { ButtonStyle } from '@/types/UI/IButton';
+
+import { BellIcon, BuoyIcon, EllipsisIcon, GearIcon, HomeIcon, MessageBubbleIcon, SearchIcon, UserIcon } from '../UI/Icons/GSIcon';
 
 const Nav = (): JSX.Element => {
 
     return (
         <nav className='w-[20.83%] py-8'>
-            <div className='flex flex-col gap-y-6'>
+            <div className='flex flex-col gap-y-6 h-full'>
                 <NavLogo />
                 <NavLinks />
             </div>
@@ -55,47 +57,51 @@ const StyledNavLink = styled(Link)`
     &.active,
     &:hover {
         background: var(--grey-50);
-        color: var(--grey-900)
+        color: var(--grey-900);
+
+        svg {
+            color: inherit;
+        }
     }
 `;
 
 const NavLinks = (): JSX.Element => {
     return (
-        <div className='px-4'>
+        <div className='flex flex-col gap-y-6 px-4 h-full'>
             <ul className='flex flex-col gap-y-1 mb-6'>
                 <li>
                     <StyledNavLink href='#' className='active'>
-                        {/* svg icon */}
+                        <HomeIcon />
                         Home
                     </StyledNavLink>
                 </li>
                 <li>
                     <StyledNavLink href='#'>
-                        {/* svg icon */}
+                        <SearchIcon />
                         Explore
                     </StyledNavLink>
                 </li>
                 <li>
                     <StyledNavLink href='#'>
-                        {/* svg icon */}
+                        <BellIcon />
                         Notifications
                     </StyledNavLink>
                 </li>
                 <li>
                     <StyledNavLink href='#'>
-                        {/* svg icon */}
+                        <MessageBubbleIcon />
                         Direct messages
                     </StyledNavLink>
                 </li>
                 <li>
                     <StyledNavLink href='#'>
-                        {/* svg icon */}
+                        <UserIcon />
                         Profile
                     </StyledNavLink>
                 </li>
                 <li>
                     <StyledNavLink href='#'>
-                        {/* svg icon */}
+                        <EllipsisIcon />
                         More
                     </StyledNavLink>
                 </li>
@@ -103,6 +109,22 @@ const NavLinks = (): JSX.Element => {
             <Button href='#' className='w-full' buttonStyle={ButtonStyle.primary}>
                 Make a post
             </Button>
+            <div className='mt-auto'>
+                <ul className='flex flex-col gap-y-1'>
+                    <li>
+                        <StyledNavLink href='#' className='active'>
+                            <BuoyIcon />
+                            Support
+                        </StyledNavLink>
+                    </li>
+                    <li>
+                        <StyledNavLink href='#'>
+                            <GearIcon />
+                            Settings
+                        </StyledNavLink>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
