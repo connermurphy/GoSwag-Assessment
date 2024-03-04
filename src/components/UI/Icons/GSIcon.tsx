@@ -81,7 +81,7 @@ export const ImageIcon: React.FC<IIconProps> = (props): JSX.Element => {
 
 export const VideoRecordIcon: React.FC<IIconProps> = (props): JSX.Element => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" {...props}>
             <path d="M18.3333 7.4428C18.3333 6.93795 18.3333 6.68553 18.2335 6.56864C18.1469 6.46722 18.0169 6.4134 17.884 6.42386C17.7307 6.43592 17.5522 6.61441 17.1953 6.97139L14.1667 9.99999L17.1953 13.0286C17.5522 13.3856 17.7307 13.5641 17.884 13.5761C18.0169 13.5866 18.1469 13.5328 18.2335 13.4313C18.3333 13.3145 18.3333 13.062 18.3333 12.5572V7.4428Z" stroke="currentColor" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M1.66666 8.16666C1.66666 6.76653 1.66666 6.06646 1.93914 5.53168C2.17882 5.06128 2.56128 4.67882 3.03168 4.43914C3.56646 4.16666 4.26653 4.16666 5.66666 4.16666H10.1667C11.5668 4.16666 12.2669 4.16666 12.8016 4.43914C13.272 4.67882 13.6545 5.06128 13.8942 5.53168C14.1667 6.06646 14.1667 6.76653 14.1667 8.16666V11.8333C14.1667 13.2335 14.1667 13.9335 13.8942 14.4683C13.6545 14.9387 13.272 15.3212 12.8016 15.5608C12.2669 15.8333 11.5668 15.8333 10.1667 15.8333H5.66666C4.26653 15.8333 3.56646 15.8333 3.03168 15.5608C2.56128 15.3212 2.17882 14.9387 1.93914 14.4683C1.66666 13.9335 1.66666 13.2335 1.66666 11.8333V8.16666Z" stroke="currentColor" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
@@ -90,7 +90,7 @@ export const VideoRecordIcon: React.FC<IIconProps> = (props): JSX.Element => {
 
 export const SmileyIcon: React.FC<IIconProps> = (props): JSX.Element => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" {...props}>
             <g clipPath="url(#clip0_206_165)">
                 <path d="M6.66666 11.6667C6.66666 11.6667 7.91666 13.3333 9.99999 13.3333C12.0833 13.3333 13.3333 11.6667 13.3333 11.6667M12.5 7.49999H12.5083M7.49999 7.49999H7.50832M18.3333 9.99999C18.3333 14.6024 14.6024 18.3333 9.99999 18.3333C5.39762 18.3333 1.66666 14.6024 1.66666 9.99999C1.66666 5.39762 5.39762 1.66666 9.99999 1.66666C14.6024 1.66666 18.3333 5.39762 18.3333 9.99999ZM12.9167 7.49999C12.9167 7.73011 12.7301 7.91666 12.5 7.91666C12.2699 7.91666 12.0833 7.73011 12.0833 7.49999C12.0833 7.26987 12.2699 7.08332 12.5 7.08332C12.7301 7.08332 12.9167 7.26987 12.9167 7.49999ZM7.91666 7.49999C7.91666 7.73011 7.73011 7.91666 7.49999 7.91666C7.26987 7.91666 7.08332 7.73011 7.08332 7.49999C7.08332 7.26987 7.26987 7.08332 7.49999 7.08332C7.73011 7.08332 7.91666 7.26987 7.91666 7.49999Z" stroke="currentColor" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
             </g>
@@ -105,7 +105,7 @@ export const SmileyIcon: React.FC<IIconProps> = (props): JSX.Element => {
 
 export const LocationIcon: React.FC<IIconProps> = (props): JSX.Element => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" {...props}>
             <g clipPath="url(#clip0_206_378)">
                 <path d="M4.16667 11.9053C2.62387 12.5859 1.66667 13.5343 1.66667 14.5833C1.66667 16.6544 5.39763 18.3333 10 18.3333C14.6024 18.3333 18.3333 16.6544 18.3333 14.5833C18.3333 13.5343 17.3761 12.5859 15.8333 11.9053M15 6.66666C15 10.0531 11.25 11.6667 10 14.1667C8.75001 11.6667 5.00001 10.0531 5.00001 6.66666C5.00001 3.90523 7.23858 1.66666 10 1.66666C12.7614 1.66666 15 3.90523 15 6.66666ZM10.8333 6.66666C10.8333 7.12689 10.4602 7.49999 10 7.49999C9.53977 7.49999 9.16667 7.12689 9.16667 6.66666C9.16667 6.20642 9.53977 5.83332 10 5.83332C10.4602 5.83332 10.8333 6.20642 10.8333 6.66666Z" stroke="currentColor" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
             </g>
@@ -114,6 +114,15 @@ export const LocationIcon: React.FC<IIconProps> = (props): JSX.Element => {
                     <rect width="20" height="20" fill="white" />
                 </clipPath>
             </defs>
+        </svg>
+    )
+}
+
+
+export const ChevronRightIcon: React.FC<IIconProps> = (props): JSX.Element => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" {...props}>
+            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )
 }

@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 interface IUserAvatar {
     image: StaticImageData|string;
     online?: boolean;
-    
+
 }
 
 export default interface IUser {
@@ -17,3 +17,5 @@ export default interface IUser {
     postCount?: number;
 
 }
+
+export interface IUserProps extends IUser {}

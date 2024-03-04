@@ -10,7 +10,7 @@ const ProfileWidget: React.FC<IProfileProps> = ({ profile, actionEnabled }): JSX
             <ProfileImage image={profile.profileAvatar.image} />
             <div className={`flex-1 [&>*]:leading-[142.857%] ${!profile?.name && !profile.handle ? 'hidden' : ''}`}>
                 {
-                    profile?.name && <p className='text-xs'>{profile.name}</p>
+                    profile?.name && <p className='text-xs font-medium'>{profile.name}</p>
                 }
                 {
                     profile?.handle && <span className='block text-xs'>@{profile.handle}</span>

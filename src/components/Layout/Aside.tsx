@@ -1,4 +1,5 @@
 import Search from "../Partials/Aside/Search";
+import TopPosters from "../Partials/Aside/TopPosters";
 import GradientCard from "../UI/GradientCard";
 
 const Aside = (): JSX.Element => {
@@ -13,8 +14,8 @@ const Aside = (): JSX.Element => {
             </div>
 
             {/* top posters */}
-            <div>
-                posters
+            <div className='px-6'>
+                <TopPosters />
             </div>
         </aside>
     );
