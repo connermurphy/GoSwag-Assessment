@@ -3,6 +3,8 @@
 import styled from "styled-components";
 import { GSLink as Button } from "./Button";
 import { ButtonStyle } from "@/types/UI/IButton";
+import IGradientCardProps from "@/types/UI/IGradientCard";
+import { ReactNode } from "react";
 
 const StyledGradientCard = styled.div`
     border-radius: 12px;
@@ -11,22 +13,41 @@ const StyledGradientCard = styled.div`
     color: var(--white);
 `;
 
-const GradientCard = (): JSX.Element => {
+const GradientCard: React.FC<IGradientCardProps> = (props): JSX.Element => {
     return (
         <StyledGradientCard className='bg-primary-gradient'>
             <div className='p-6 pb-8'>
-                <h3 className='text-lg font-semibold pb-1'>Upgrade to Premium</h3>
-                <div className='text-xs'>
-                    Unlock extra features and remove ads!
-                </div>
+                <h3 className='text-lg font-semibold pb-1'>
+                    {props.title}
+                </h3>
+                {
+                    props.description &&
+                    <div className='text-xs'>
+                        Unlock extra features and remove ads!
+                    </div>
+                }
             </div>
-            <div className='border-t border-white px-4 py-3'>
-                <Button href='#' buttonStyle={ButtonStyle.secondary} className='w-full'>
-                    Upgrade
-                </Button>
-            </div>
+            <GradientCardAction buttonUrl={'#'}>
+                Upgrade
+            </GradientCardAction>
         </StyledGradientCard>
     )
+}
+
+const GradientCardAction = (props: { buttonUrl?: string, children?: ReactNode }): JSX.Element => {
+
+    if (props.buttonUrl != null) {
+        return (
+            <div className='border-t border-white px-4 py-3'>
+                <Button href={props.buttonUrl} buttonStyle={ButtonStyle.secondary} className='w-full'>
+                    {props.children}
+                </Button>
+            </div>
+        )
+    }
+
+    return <></>
+
 }
 
 export default GradientCard;

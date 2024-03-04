@@ -8,7 +8,8 @@ const Aside = (): JSX.Element => {
 
             {/* upgrade card */}
             <div className='px-6'>
-                <GradientCard />
+                <GradientCard title='Upgrade to Premium'
+                    description={`<p>Unlock extra features and remove ads!</p>`} />
             </div>
 
             {/* top posters */}
