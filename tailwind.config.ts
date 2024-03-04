@@ -32,6 +32,7 @@ const config: Config = {
         'grey-300': '#D0D5DD',
         'grey-200': '#EAECF0',
         'grey-50': '#F9FAFB',
+        'grey-25': '#FCFCFD',
 
         //blue (brand blue)
         'blue-900': '#155EEF',
