@@ -23,8 +23,8 @@ const StyledNav = styled.nav`
 const Nav = (): JSX.Element => {
 
     return (
-        <StyledNav className='w-[20.83%] py-8'>
-            <div className='flex flex-col gap-y-6 h-full'>
+        <StyledNav className='w-[20.83%] h-screen overflow-auto'>
+            <div className='flex flex-col gap-y-6 py-8 min-h-full'>
                 <NavLogo />
                 <NavLinks />
                 <NavProfile />
@@ -75,49 +75,51 @@ const StyledNavLink = styled(Link)`
 
 const NavLinks = (): JSX.Element => {
     return (
-        <div className='flex flex-col gap-y-6 px-4 h-full'>
-            <ul className='flex flex-col gap-y-1 mb-6'>
-                <li>
-                    <StyledNavLink href='#' className='active'>
-                        <HomeIcon />
-                        Home
-                    </StyledNavLink>
-                </li>
-                <li>
-                    <StyledNavLink href='#'>
-                        <SearchIcon />
-                        Explore
-                    </StyledNavLink>
-                </li>
-                <li>
-                    <StyledNavLink href='#'>
-                        <BellIcon />
-                        Notifications
-                    </StyledNavLink>
-                </li>
-                <li>
-                    <StyledNavLink href='#'>
-                        <MessageBubbleIcon />
-                        Direct messages
-                    </StyledNavLink>
-                </li>
-                <li>
-                    <StyledNavLink href='#'>
-                        <UserIcon />
-                        Profile
-                    </StyledNavLink>
-                </li>
-                <li>
-                    <StyledNavLink href='#'>
-                        <EllipsisIcon />
-                        More
-                    </StyledNavLink>
-                </li>
-            </ul>
-            <Button href='#' className='w-full' buttonStyle={ButtonStyle.primary}>
-                Make a post
-            </Button>
-            <div className='mt-auto'>
+        <>
+            <div className='flex flex-col gap-y-6 px-4 h-full'>
+                <ul className='flex flex-col gap-y-1 mb-6'>
+                    <li>
+                        <StyledNavLink href='#' className='active'>
+                            <HomeIcon />
+                            Home
+                        </StyledNavLink>
+                    </li>
+                    <li>
+                        <StyledNavLink href='#'>
+                            <SearchIcon />
+                            Explore
+                        </StyledNavLink>
+                    </li>
+                    <li>
+                        <StyledNavLink href='#'>
+                            <BellIcon />
+                            Notifications
+                        </StyledNavLink>
+                    </li>
+                    <li>
+                        <StyledNavLink href='#'>
+                            <MessageBubbleIcon />
+                            Direct messages
+                        </StyledNavLink>
+                    </li>
+                    <li>
+                        <StyledNavLink href='#'>
+                            <UserIcon />
+                            Profile
+                        </StyledNavLink>
+                    </li>
+                    <li>
+                        <StyledNavLink href='#'>
+                            <EllipsisIcon />
+                            More
+                        </StyledNavLink>
+                    </li>
+                </ul>
+                <Button href='#' className='w-full' buttonStyle={ButtonStyle.primary}>
+                    Make a post
+                </Button>
+            </div>
+            <div className='mt-auto px-4'>
                 <ul className='flex flex-col gap-y-1'>
                     <li>
                         <StyledNavLink href='#'>
@@ -133,7 +135,7 @@ const NavLinks = (): JSX.Element => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </>
     )
 }
 
@@ -153,7 +155,7 @@ const NavProfile = (): JSX.Element => {
                     name: 'Olivia Rhye',
                     handle: 'oliviarhye'
                 }}
-                actionEnabled={true}
+                    actionEnabled={true}
                 />
             </StyledNavProfile>
         </div>
