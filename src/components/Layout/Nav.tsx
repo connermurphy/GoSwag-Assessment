@@ -12,6 +12,9 @@ import { GSLink as Button } from '../UI/Button';
 import { ButtonStyle } from '@/types/UI/IButton';
 
 import { BellIcon, BuoyIcon, EllipsisIcon, GearIcon, HomeIcon, MessageBubbleIcon, SearchIcon, UserIcon } from '../UI/Icons/GSIcon';
+import ProfileWidget from '../UI/ProfileWidget';
+
+import ProfileAvatar from '/public/avatar.png';
 
 const Nav = (): JSX.Element => {
 
@@ -20,6 +23,7 @@ const Nav = (): JSX.Element => {
             <div className='flex flex-col gap-y-6 h-full'>
                 <NavLogo />
                 <NavLinks />
+                <NavProfile />
             </div>
         </nav>
     );
@@ -127,6 +131,28 @@ const NavLinks = (): JSX.Element => {
             </div>
         </div>
     )
+}
+
+const StyledNavProfile = styled.div`
+    border-top: solid 1px var(--grey-200);
+`;
+
+const NavProfile = (): JSX.Element => {
+
+    return (
+        <div className='px-4'>
+            <StyledNavProfile className='pt-6'>
+                <ProfileWidget profile={{
+                    profileAvatar: {
+                        image: ProfileAvatar
+                    },
+                    name: 'Olivia Rhye',
+                    handle: 'oliviarhye'
+                }} />
+            </StyledNavProfile>
+        </div>
+    )
+
 }
 
 export default Nav;
