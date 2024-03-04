@@ -4,7 +4,8 @@ import GradientCard from "../UI/GradientCard";
 
 const Aside = (): JSX.Element => {
     return (
-        <aside className="w-[25%] pt-6 pb-7 flex flex-col gap-y-12">
+        <aside className="w-[25%] pt-6 pb-7 flex flex-col gap-y-12 max-h-screen overflow-auto">
+
             <Search />
 
             {/* upgrade card */}
@@ -17,6 +18,7 @@ const Aside = (): JSX.Element => {
             <div className='px-6'>
                 <TopPosters />
             </div>
+
         </aside>
     );
 }

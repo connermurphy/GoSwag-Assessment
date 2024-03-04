@@ -6,7 +6,7 @@ const Skeleton = ({
     children
 }: Readonly<{ children: ReactNode }>): JSX.Element => {
     return (
-        <div className='flex flex-row flex-wrap min-h-screen'>
+        <div className='flex flex-row flex-wrap max-h-screen'>
             {/* nav */}
             <Nav />
 
