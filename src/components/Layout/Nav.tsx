@@ -16,16 +16,20 @@ import ProfileWidget from '../UI/ProfileWidget';
 
 import ProfileAvatar from '/public/avatar.png';
 
+const StyledNav = styled.nav`
+    border-right: solid 1px var(--grey-200);
+`;
+
 const Nav = (): JSX.Element => {
 
     return (
-        <nav className='w-[20.83%] py-8'>
+        <StyledNav className='w-[20.83%] py-8'>
             <div className='flex flex-col gap-y-6 h-full'>
                 <NavLogo />
                 <NavLinks />
                 <NavProfile />
             </div>
-        </nav>
+        </StyledNav>
     );
 }
 
