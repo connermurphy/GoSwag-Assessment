@@ -12,11 +12,14 @@ const TabDiv = styled.div`
         
         border-radius: 6px;
         transition: .125s ease-in-out;
+        font-weight: 600;
+        color: var(--grey-500);
 
         &.active,
         &:hover {
             box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
             background: var(--white);
+            color: var(--grey-700);
         }
     }
 `;
