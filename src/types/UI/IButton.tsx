@@ -10,6 +10,8 @@ export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
     //optional, default to primary
     buttonStyle?: ButtonStyle;
     children?: ReactNode
+
+    disabled?: boolean;
 }
 
 
@@ -21,4 +23,6 @@ export interface ILinkProps extends LinkProps {
     children?: ReactNode
 
     href: string;
+
+    disabled?: boolean;
 }

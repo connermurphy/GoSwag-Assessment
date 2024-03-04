@@ -145,14 +145,16 @@ const NavProfile = (): JSX.Element => {
 
     return (
         <div className='px-4'>
-            <StyledNavProfile className='pt-6'>
+            <StyledNavProfile className='pl-2 pt-6'>
                 <ProfileWidget profile={{
                     profileAvatar: {
                         image: ProfileAvatar
                     },
                     name: 'Olivia Rhye',
                     handle: 'oliviarhye'
-                }} />
+                }}
+                actionEnabled={true}
+                />
             </StyledNavProfile>
         </div>
     )

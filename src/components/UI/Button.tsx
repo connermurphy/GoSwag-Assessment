@@ -21,6 +21,15 @@ const StyledButton = styled.button<{ $buttonStyle?: ButtonStyle }>`
     border-radius: 8px;
     cursor: pointer;
 
+    transition: all .175s ease-in-out;
+
+    &.disabled {
+        background: ${props => props.$buttonStyle == ButtonStyle.primary ? 'var(--blue-50)' : 'var(--grey-50)'};
+        color: ${props => props.$buttonStyle == ButtonStyle.primary ? 'var(--grey-200)' : 'var(--grey-600)'};
+
+        pointer-events: none;
+    }
+
 `;
 
 
