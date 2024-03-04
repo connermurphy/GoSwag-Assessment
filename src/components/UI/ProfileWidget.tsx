@@ -73,7 +73,7 @@ const ProfileImage: React.FC<IUserAvatar> = (props): JSX.Element => {
                     width={48}
                     height={48}
                     quality={80}
-                    objectFit='cover'
+                    style={{ objectFit: 'cover' }}
                 />
                 {
                     props.online &&
