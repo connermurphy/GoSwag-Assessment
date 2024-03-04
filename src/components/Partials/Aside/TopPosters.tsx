@@ -113,14 +113,14 @@ const StyledPoster = styled.div`
 
 const PosterNode: React.FC<IProfileProps> = (props): JSX.Element => {
     return (
-        <StyledPoster className='flex flex-row items-center border-t border-t-grey-200 py-4'>
-            <div className='pr-4'>
+        <StyledPoster className='flex flex-row flex-wrap xl:flex-nowrap gap-y-2 items-center border-t border-t-grey-200 py-4'>
+            <div className='pr-4 w-full xl:w-auto xl:flex-[60%] w-[0 0 60%]'>
                 <ProfileWidget {...props} />
             </div>
-            <div className='px-6'>
-                <p className='text-xs leading-[142.857%] text-grey-600'>{props.profile.postCount ?? 0} Posts</p>
+            <div className='xl:px-4 w-[75px]'>
+                <p className='flex flex-row flex-nowrap text-xs leading-[142.857%] text-grey-600 min-w-[65px]'>{props.profile.postCount ?? 0} Posts</p>
             </div>
-            <div>
+            <div className='ml-auto'>
                 <button type='button' aria-label='....' className="top-[1px] p-[.625rem]">
                     <ChevronRightIcon className='w-[20px] h-[20px] text-grey-500 hover:text-grey-900 transition-all duration-[.175s]' />
                 </button>
