@@ -3,13 +3,15 @@
 import ProfileWidget from "@/components/UI/ProfileWidget";
 import styled from "styled-components";
 
-import ProfileAvatar from '/public/avatar.png';
 import RTEImage from '/public/rte-image.png';
 
 import IContentPostProps from "@/types/UI/IContentPost";
 
 import RichText from "@/components/UI/RichText";
 import Image, { StaticImageData } from "next/image";
+
+import ProfileAvatar from '/public/avatar.png';
+import ProfileAvatar2 from '/public/avatar2.png';
 
 const Content = (): JSX.Element => {
 
@@ -18,7 +20,7 @@ const Content = (): JSX.Element => {
             <ContentPost
                 profile={{
                     profileAvatar: {
-                        image: ProfileAvatar,
+                        image: ProfileAvatar2,
                         online: true
                     },
                     name: 'Phoenix Baker',

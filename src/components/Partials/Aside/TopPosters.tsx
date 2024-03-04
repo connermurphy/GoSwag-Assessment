@@ -4,10 +4,19 @@ import { ChevronRightIcon, EllipsisIcon } from "@/components/UI/Icons/GSIcon";
 import ProfileWidget from "@/components/UI/ProfileWidget";
 import styled from "styled-components";
 
-import ProfileAvatar from '/public/avatar.png';
-import { IUserProps } from "@/types/IUser";
 import IProfileProps from "@/types/UI/IProfile";
+
 import Link from "next/link";
+
+import ProfileAvatar from '/public/avatar.png';
+import ProfileAvatar2 from '/public/avatar2.png';
+import ProfileAvatar3 from '/public/avatar3.png';
+import ProfileAvatar4 from '/public/avatar4.png';
+import ProfileAvatar5 from '/public/avatar5.png';
+import ProfileAvatar6 from '/public/avatar6.png';
+import ProfileAvatar7 from '/public/avatar7.png';
+import ProfileAvatar8 from '/public/avatar8.png';
+
 
 const TopPosters = (): JSX.Element => {
     return (
@@ -21,51 +30,67 @@ const TopPosters = (): JSX.Element => {
             <div>
                 <PosterNode profile={{
                     profileAvatar: {
-                        image: ProfileAvatar
+                        image: ProfileAvatar2
                     },
                     name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    handle: 'phoenix.baker',
+                    postCount: 24
                 }} />
 
                 <PosterNode profile={{
                     profileAvatar: {
-                        image: ProfileAvatar
+                        image: ProfileAvatar6
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Lana Steiner',
+                    handle: 'lanasteiner',
+                    postCount: 22
                 }} />
 
                 <PosterNode profile={{
                     profileAvatar: {
-                        image: ProfileAvatar
+                        image: ProfileAvatar3
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Demi Wilkinson',
+                    handle: 'demi_wilkinson',
+                    postCount: 22
                 }} />
 
                 <PosterNode profile={{
                     profileAvatar: {
-                        image: ProfileAvatar
+                        image: ProfileAvatar5
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Candice Wu',
+                    handle: 'candicewu',
+                    postCount: 20
                 }} />
 
                 <PosterNode profile={{
                     profileAvatar: {
-                        image: ProfileAvatar
+                        image: ProfileAvatar4
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Natali Craig',
+                    handle: 'nat.craig',
+                    postCount: 18
                 }} />
 
                 <PosterNode profile={{
                     profileAvatar: {
-                        image: ProfileAvatar
+                        image: ProfileAvatar7
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Drew Cano',
+                    handle: 'drewc',
+                    postCount: 16
                 }} />
+
+                <PosterNode profile={{
+                    profileAvatar: {
+                        image: ProfileAvatar8
+                    },
+                    name: 'Orlando Diggs',
+                    handle: 'orlando_diggs',
+                    postCount: 12
+                }} />
+
             </div>
             <div className='pt-4 text-right'>
                 <Link href='#' className='text-xs leading-[142.857%] font-semibold text-primary-700 hover:underline'>
