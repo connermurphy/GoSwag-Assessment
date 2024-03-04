@@ -7,6 +7,7 @@ import styled from "styled-components";
 import ProfileAvatar from '/public/avatar.png';
 import { IUserProps } from "@/types/IUser";
 import IProfileProps from "@/types/UI/IProfile";
+import Link from "next/link";
 
 const TopPosters = (): JSX.Element => {
     return (
@@ -66,6 +67,11 @@ const TopPosters = (): JSX.Element => {
                     handle: 'phoenix.baker'
                 }} />
             </div>
+            <div className='pt-4 text-right'>
+                <Link href='#' className='text-xs leading-[142.857%] font-semibold text-primary-700 hover:underline'>
+                    View All
+                </Link>
+            </div>
         </>
     )
 }
@@ -73,6 +79,10 @@ const TopPosters = (): JSX.Element => {
 const StyledPoster = styled.div`
     &:first-of-type {
         border-top: none;
+    }
+
+    &:last-of-type {
+        border-bottom: solid 1px var(--grey-200);
     }
 `;
 
