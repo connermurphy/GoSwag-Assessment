@@ -11,14 +11,10 @@ import IContentPostProps from "@/types/UI/IContentPost";
 import RichText from "@/components/UI/RichText";
 import Image, { StaticImageData } from "next/image";
 
-const ContentDiv = styled.div`
-
-`;
-
 const Content = (): JSX.Element => {
 
     return (
-        <ContentDiv className='px-6 py-8'>
+        <div className='px-6 py-8'>
             <ContentPost
                 profile={{
                     profileAvatar: {
@@ -69,7 +65,7 @@ const Content = (): JSX.Element => {
                 `}
             />
 
-        </ContentDiv>
+        </div>
     )
 
 }
@@ -95,14 +91,17 @@ const ContentPost: React.FC<IContentPostProps> = (props): JSX.Element => {
 }
 
 const StyledMessageBubble = styled.div`
-    border-radius: 0 8px 8px 8px;
     margin-left: calc(48px + .75rem);
+
+    > .bubble {
+        border-radius: 0 8px 8px 8px;
+    }
 `
 
 const MessageBubble = (props: { content?: string, media?: StaticImageData | string }): JSX.Element => {
     return (
         <StyledMessageBubble className="mt-3">
-            <div className='border border-grey-200 bg-white p-3'>
+            <div className='bubble border border-grey-200 bg-white p-3'>
                 <RichText
                     content={props.content}
                 />
