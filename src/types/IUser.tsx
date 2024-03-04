@@ -1,9 +1,8 @@
 import { StaticImageData } from "next/image";
 
-interface IUserAvatar {
+export interface IUserAvatar {
     image: StaticImageData|string;
     online?: boolean;
-
 }
 
 export default interface IUser {

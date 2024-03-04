@@ -14,9 +14,10 @@ const MainHeader = (): JSX.Element => {
         <StyledMainHeader className='flex flex-col gap-y-6 p-6'>
             {/* tabbed content selector */}
             <Tabs />
-            
+
             {/* matching tabbed content body */}
             <PostEditor />
+
         </StyledMainHeader>
     )
 }
