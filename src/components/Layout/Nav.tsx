@@ -77,7 +77,7 @@ const NavLinks = (): JSX.Element => {
     return (
         <>
             <div className='flex flex-col gap-y-6 px-4 h-full'>
-                <ul className='flex flex-col gap-y-1 mb-6'>
+                <ul className='flex flex-col gap-y-1'>
                     <li>
                         <StyledNavLink href='#' className='active'>
                             <HomeIcon />

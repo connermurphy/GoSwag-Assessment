@@ -40,8 +40,8 @@ const Content = (): JSX.Element => {
                         image: ProfileAvatar,
                         online: true
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Lana Steiner',
+                    handle: 'lanasteiner'
                 }}
                 timestamp={'2 mins ago'}
                 content={`
@@ -56,14 +56,12 @@ const Content = (): JSX.Element => {
                         image: ProfileAvatar,
                         online: true
                     },
-                    name: 'Phoenix Baker',
-                    handle: 'phoenix.baker'
+                    name: 'Conner Murphy',
+                    handle: 'connermurphy'
                 }}
-                timestamp={'Just Now'}
+                timestamp={'1 hour ago'}
                 content={`
-                    <p>"If you want to play at an excellent level - if you want to do something excellent, you have to be excellent all the time.</p>    
-                    <p>That's how you build habits.</p>
-                    <p>When excellence becomes a habit, then that's just who you are." -Kobe Bryant</p>
+                    <p>Did you know a fear of long words is called Hippopotomonstrosesquippedaliophobia.</p>    
                 `}
             />
 
